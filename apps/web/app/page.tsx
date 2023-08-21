@@ -6,7 +6,7 @@ export default async function Home() {
   const { greeting } = await trpc.hello.query({ name: `Tom` });
   return (
     <div>
-      <p>Server side = {greeting}</p>
+      <p className="font-player text-[57px]">Server side = {greeting}</p>
       <ClientSide />
     </div>
   );
