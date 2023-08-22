@@ -22,7 +22,6 @@
         "functions": "never"
       }
     ],
-    "indent": ["error", 2],
     "quotes": ["error", "single"],
     "eol-last": "error",
     "semi": ["error", "never"],

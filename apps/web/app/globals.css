@@ -20,13 +20,21 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: var(--font-suite);
-  --biggest-font-size: 2.5rem;
-  --h1-font-size: 1.75rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
+  --display-large: 3.2rem;
+  --display-medium: 2.5rem;
+  --display-small: 2rem;
+  --headline-large: 1.8rem;
+  --headline-medium: 1.5rem;
+  --headline-small: 1.3rem;
+  --title-large: 1.2rem;
+  --title-medium: 1rem;
+  --title-small: 0.9rem;
+  --label-large: 0.9rem;
+  --label-medium: 0.8rem;
+  --label-small: 0.7rem;
+  --body-large: 0.9rem;
+  --body-medium: 0.8rem;
+  --body-small: 0.7rem;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -36,13 +44,21 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
-    --biggest-font-size: 4.5rem;
-    --h1-font-size: 3rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
+    --display-large: 3.5625rem;
+    --display-medium: 2.8125rem;
+    --display-small: 2.25rem;
+    --headline-large: 2rem;
+    --headline-medium: 1.75rem;
+    --headline-small: 1.5rem;
+    --title-large: 1.375rem;
+    --title-medium: 1rem;
+    --title-small: 0.875rem;
+    --label-large: 0.875rem;
+    --label-medium: 0.75rem;
+    --label-small: 0.6875rem;
+    --body-large: 1rem;
+    --body-medium: 0.875rem;
+    --body-small: 0.75rem;
   }
 }
 
