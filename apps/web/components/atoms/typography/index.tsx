@@ -4,9 +4,9 @@ type Role =
   | 'DISPLAY_LARGE'
   | 'DISPLAY_MEDIUM'
   | 'DISPLAY_SMALL'
-  | 'HEADING_LARGE'
-  | 'HEADING_MEDIUM'
-  | 'HEADING_SMALL'
+  | 'HEADLINE_LARGE'
+  | 'HEADLINE_MEDIUM'
+  | 'HEADLINE_SMALL'
   | 'TITLE_LARGE'
   | 'TITLE_MEDIUM'
   | 'TITLE_SMALL'
@@ -19,7 +19,7 @@ type Role =
 
 type Component = 'p' | 'span' | 'div' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 
-type Align = 'INHERIT' | 'LEFT' | 'CENTER' | 'RIGHT' | 'JUSTIFY'
+export type Align = 'INHERIT' | 'LEFT' | 'CENTER' | 'RIGHT' | 'JUSTIFY'
 
 type Display = 'initial' | 'block' | 'inline' | 'inline-block'
 
@@ -56,19 +56,19 @@ export default function Typography({
   noWrap = false,
   fontWeight = 'NORMAL',
 }: Props) {
+  console.log(!color.startsWith('text'), `text-[${color}]`)
   const ComponentTag = component
   const className = classnames(
     'm-0',
     getRoleStyle(role),
     getAlignStyle(align),
-    color,
     { 'mb-[0.35em]': gutterBottom },
     { 'whitespace-nowrap overflow-hidden text-ellipsis': noWrap },
     getFontWeightStyle(fontWeight)
   )
 
   return (
-    <ComponentTag style={{ display }} className={className}>
+    <ComponentTag style={{ display, color }} className={className}>
       {children}
     </ComponentTag>
   )
@@ -82,11 +82,11 @@ function getRoleStyle(role: Role) {
       return 'text-display-medium leading-52'
     case 'DISPLAY_SMALL':
       return 'text-display-small leading-44'
-    case 'HEADING_LARGE':
-      return 'text-heading-large leading-10'
-    case 'HEADING_MEDIUM':
-      return 'text-heading-medium leading-9'
-    case 'HEADING_SMALL':
+    case 'HEADLINE_LARGE':
+      return 'text-headline-large leading-10'
+    case 'HEADLINE_MEDIUM':
+      return 'text-headline-medium leading-9'
+    case 'HEADLINE_SMALL':
       return 'text-2xl'
     case 'TITLE_LARGE':
       return 'text-title-large leading-7'

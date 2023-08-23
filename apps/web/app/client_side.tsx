@@ -3,7 +3,7 @@
 import { trpc } from '@web/app/trpc'
 import { useEffect, useState } from 'react'
 
-import Typography from './components/atoms/typography'
+import Typography from '../components/atoms/typography'
 
 export default function ClientSide() {
   const [greeting, setGreeting] = useState('')
@@ -13,7 +13,7 @@ export default function ClientSide() {
       .then(({ greeting }) => setGreeting(greeting))
   }, [])
   return (
-    <Typography role="DISPLAY_LARGE" color="text-white" gutterBottom noWrap>
+    <Typography role="DISPLAY_LARGE" color="#811a1a" gutterBottom noWrap>
       I am client side: {greeting}
     </Typography>
   )

@@ -20,7 +20,7 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: var(--font-suite);
-  --display-large: 3.2rem;
+  /* --display-large: 3.2rem;
   --display-medium: 2.5rem;
   --display-small: 2rem;
   --headline-large: 1.8rem;
@@ -34,7 +34,7 @@
   --label-small: 0.7rem;
   --body-large: 0.9rem;
   --body-medium: 0.8rem;
-  --body-small: 0.7rem;
+  --body-small: 0.7rem; */
 
   /*========== z index ==========*/
   --z-tooltip: 10;
