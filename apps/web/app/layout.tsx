@@ -1,8 +1,10 @@
 import './globals.css'
 
+import Header from '@web/components/organism/header'
 import type { Metadata } from 'next'
 
 import { player, suite } from './fonts'
+import Providers from './providers'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${player.variable} ${suite.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
+      </body>
     </html>
   )
 }

@@ -1,7 +1,7 @@
-import React from 'react'
-
 import './header.css'
+
 import { SampleButton } from '@web/components/sample_button'
+import React from 'react'
 
 type User = {
   name: string

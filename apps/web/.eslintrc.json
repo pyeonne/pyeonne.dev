@@ -1,12 +1,6 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:storybook/recommended"
-  ],
-  "plugins": [
-    "eslint-plugin-simple-import-sort",
-    "unused-imports"
-  ],
+  "extends": ["next/core-web-vitals", "plugin:storybook/recommended"],
+  "plugins": ["eslint-plugin-simple-import-sort", "unused-imports"],
   "rules": {
     "react/no-unescaped-entities": "off",
     "@next/next/no-page-custom-font": "off",
@@ -28,15 +22,9 @@
         "functions": "never"
       }
     ],
-    "quotes": [
-      "error",
-      "single"
-    ],
+    "quotes": ["error", "single"],
     "eol-last": "error",
-    "semi": [
-      "error",
-      "never"
-    ],
+    "semi": ["error", "never"],
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
     "no-unused-vars": [
@@ -47,9 +35,7 @@
         "ignoreRestSiblings": false
       }
     ],
-    "unused-imports/no-unused-imports-ts": [
-      "error"
-    ],
+    "unused-imports/no-unused-imports-ts": ["error"],
     "comma-spacing": [
       "error",
       {

@@ -13,6 +13,8 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@tanstack/react-query": "^4.33.0",
+    "@tanstack/react-query-devtools": "^4.33.0",
     "@trpc/client": "^10.37.1",
     "@trpc/server": "^10.37.1",
     "@types/node": "^20.3.1",
@@ -39,6 +41,7 @@
     "@storybook/react": "^7.3.2",
     "@storybook/testing-library": "^0.2.0",
     "@svgr/webpack": "^8.1.0",
+    "@tanstack/eslint-plugin-query": "^4.32.5",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-storybook": "^0.6.13",
     "eslint-plugin-unused-imports": "^3.0.0",

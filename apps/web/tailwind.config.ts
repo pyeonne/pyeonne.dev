@@ -8,9 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        header: 'var(--header-height)',
+      },
       colors: {
         first: 'var(--first-color)',
-        black: 'var(--black-color)',
         'black-light': 'var(--black-color-light)',
         white: 'var(--white-color)',
         title: 'var(--title-color)',
@@ -48,6 +50,14 @@ const config: Config = {
       zIndex: {
         tooltip: 'var(--z-tooltip)',
         fixed: 'var(--z-fixed)',
+      },
+      transitionProperty: {
+        top: 'top',
+        color: 'color',
+        width: 'width',
+      },
+      transitionDuration: {
+        400: '400ms',
       },
     },
   },

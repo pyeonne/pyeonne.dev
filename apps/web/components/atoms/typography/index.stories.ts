@@ -39,6 +39,9 @@ const meta = {
   component: Typography,
   tags: ['autodocs'],
   argTypes: {
+    children: {
+      description: 'The content of the component.',
+    },
     role: {
       control: {
         type: 'select',

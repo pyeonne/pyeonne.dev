@@ -43,6 +43,7 @@ type Props = {
   gutterBottom?: boolean
   noWrap?: boolean
   fontWeight?: FontWeight
+  sx?: string
 }
 
 export default function Typography({
@@ -55,8 +56,8 @@ export default function Typography({
   gutterBottom = false,
   noWrap = false,
   fontWeight = 'NORMAL',
+  sx = '',
 }: Props) {
-  console.log(!color.startsWith('text'), `text-[${color}]`)
   const ComponentTag = component
   const className = classnames(
     'm-0',
@@ -64,7 +65,8 @@ export default function Typography({
     getAlignStyle(align),
     { 'mb-[0.35em]': gutterBottom },
     { 'whitespace-nowrap overflow-hidden text-ellipsis': noWrap },
-    getFontWeightStyle(fontWeight)
+    getFontWeightStyle(fontWeight),
+    sx
   )
 
   return (

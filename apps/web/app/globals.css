@@ -20,6 +20,9 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: var(--font-suite);
+  --headline-small: 1.25rem;
+  --title-small: 0.75rem;
+  --body-large: 1.125rem;
   /* --display-large: 3.2rem;
   --display-medium: 2.5rem;
   --display-small: 2rem;
@@ -56,7 +59,7 @@
     --label-large: 0.875rem;
     --label-medium: 0.75rem;
     --label-small: 0.6875rem;
-    --body-large: 1rem;
+    --body-large: 1.25rem;
     --body-medium: 0.875rem;
     --body-small: 0.75rem;
   }
@@ -105,4 +108,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  padding-inline: 1.5rem;
+  margin: 0 auto;
 }
