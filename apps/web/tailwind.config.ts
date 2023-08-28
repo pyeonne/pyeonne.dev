@@ -48,6 +48,7 @@ const config: Config = {
         64: '64px',
       },
       zIndex: {
+        5: '5',
         tooltip: 'var(--z-tooltip)',
         fixed: 'var(--z-fixed)',
       },
@@ -55,9 +56,30 @@ const config: Config = {
         top: 'top',
         color: 'color',
         width: 'width',
+        'background-color': 'background-color',
+        filter: 'filter',
       },
       transitionDuration: {
         400: '400ms',
+      },
+      animation: {
+        'scroll-down': 'scroll-down 3s infinite',
+      },
+      keyframes: {
+        'scroll-down': {
+          '0%': {
+            transform: 'translateY(-1rem)',
+            opacity: '0',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'translateY(.6rem)',
+            opacity: '0',
+          },
+        },
       },
     },
   },

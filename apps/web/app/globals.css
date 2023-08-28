@@ -20,6 +20,7 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: var(--font-suite);
+  --display-large: 2.5rem;
   --headline-small: 1.25rem;
   --title-small: 0.75rem;
   --body-large: 1.125rem;
@@ -114,4 +115,39 @@ img {
 .container {
   padding-inline: 1.5rem;
   margin: 0 auto;
+}
+
+.section {
+  padding-block: 4rem 2rem;
+}
+
+.geometric-box {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--first-color);
+  rotate: -30deg;
+}
+
+.geometric-box::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--black-color);
+  left: -5px;
+  top: -5px;
+}
+
+.main {
+  overflow: hidden; /* For animation ScrollReveal */
+}
+
+/*=============== HOME ===============*/
+.home__description b {
+  background: linear-gradient(
+    90deg,
+    hsla(14, 98%, 50%, 0.3),
+    hsla(14, 98%, 50%, 0)
+  );
 }

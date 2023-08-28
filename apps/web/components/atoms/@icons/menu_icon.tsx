@@ -1,4 +1,4 @@
-import Icon from '@web/assets/vectors/menu_line.svg'
+import Icon from '@web/public/vectors/menu_line.svg'
 
 type Props = {
   className?: string

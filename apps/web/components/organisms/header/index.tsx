@@ -1,6 +1,5 @@
-import ToggleButton from '@web/components/atoms/toggle_button'
-
-import NavMenu from '../nav_menu'
+import NavMenu from '@web/components/molecules/nav_menu'
+import ToggleButton from '@web/components/molecules/toggle_button'
 
 export default function Header() {
   return (

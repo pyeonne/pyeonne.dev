@@ -1,6 +1,6 @@
 import './globals.css'
 
-import Header from '@web/components/organism/header'
+import Header from '@web/components/organisms/header'
 import type { Metadata } from 'next'
 
 import { player, suite } from './fonts'

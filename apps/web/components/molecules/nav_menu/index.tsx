@@ -1,26 +1,26 @@
 'use client'
 
-import CloseButton from '@web/components/atoms/close_button'
 import Typography from '@web/components/atoms/typography'
+import CloseButton from '@web/components/molecules/close_button'
 import useMenu from '@web/hooks/menu'
 import classNames from 'classnames'
 
 const items = [
   {
     name: 'Home',
-    href: '#',
+    href: '#home',
   },
   {
     name: 'About Me',
-    href: '#',
+    href: '#about',
   },
   {
     name: 'Projects',
-    href: '#',
+    href: '#projects',
   },
   {
     name: 'Contact',
-    href: '#',
+    href: '#contact',
   },
 ]
 

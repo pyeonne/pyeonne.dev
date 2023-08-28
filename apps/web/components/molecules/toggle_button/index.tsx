@@ -2,8 +2,8 @@
 
 import useMenu from '@web/hooks/menu'
 
-import IconButton from '../icon_button'
-import { MenuIcon } from '../icons'
+import { MenuIcon } from '../../atoms/@icons'
+import IconButton from '../../atoms/icon_button'
 
 export default function ToggleButton() {
   const { openMenu } = useMenu()
