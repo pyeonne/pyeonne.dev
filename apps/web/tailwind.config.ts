@@ -52,6 +52,9 @@ const config: Config = {
         tooltip: 'var(--z-tooltip)',
         fixed: 'var(--z-fixed)',
       },
+      boxShadow: {
+        header: '0 1px 16px hsla(0, 0%, 0%, 0.12)',
+      },
       transitionProperty: {
         top: 'top',
         color: 'color',

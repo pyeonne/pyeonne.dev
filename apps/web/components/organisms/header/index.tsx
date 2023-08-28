@@ -1,10 +1,26 @@
+'use client'
+
 import NavMenu from '@web/components/molecules/nav_menu'
 import ToggleButton from '@web/components/molecules/toggle_button'
+import useHeader from '@web/hooks/header'
+import classNames from 'classnames'
+import { useEffect } from 'react'
 
 export default function Header() {
+  const { shadowHeader, addShadowHeader, removeShadowHeader } = useHeader()
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      window.scrollY > 50 ? addShadowHeader() : removeShadowHeader()
+    })
+  }, [addShadowHeader, removeShadowHeader])
+
   return (
     <header
-      className="header fixed w-full top-0 left-0 bg-body z-fixed transition-shadow duration-400"
+      className={classNames(
+        'header fixed w-full top-0 left-0 bg-body z-fixed transition-shadow duration-400',
+        shadowHeader ? 'shadow-header' : ''
+      )}
       id="header"
     >
       <nav className="nav container relative h-header flex justify-between items-center">
