@@ -48,12 +48,22 @@ const config: Config = {
         64: '64px',
       },
       zIndex: {
+        1: '1',
         5: '5',
         tooltip: 'var(--z-tooltip)',
         fixed: 'var(--z-fixed)',
       },
+      margin: {
+        18: '4.5rem',
+      },
       boxShadow: {
         header: '0 1px 16px hsla(0, 0%, 0%, 0.12)',
+      },
+      borderWidth: {
+        3: '3px',
+      },
+      rotate: {
+        30: '30deg',
       },
       transitionProperty: {
         top: 'top',
@@ -61,6 +71,7 @@ const config: Config = {
         width: 'width',
         'background-color': 'background-color',
         filter: 'filter',
+        border: 'border',
       },
       transitionDuration: {
         400: '400ms',
@@ -83,6 +94,9 @@ const config: Config = {
             opacity: '0',
           },
         },
+      },
+      listStyleType: {
+        square: 'square',
       },
     },
   },

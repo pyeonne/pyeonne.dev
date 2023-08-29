@@ -1,4 +1,6 @@
 import { ArrowDownIcon } from '@web/components/atoms/@icons'
+import GeometricBox from '@web/components/atoms/geometric_box'
+import Line from '@web/components/atoms/line'
 import Typography from '@web/components/atoms/typography'
 import HomeSocial from '@web/components/molecules/home_social'
 import Image from 'next/image'
@@ -16,7 +18,7 @@ export default function HomeSection() {
         </Typography>
 
         <div className="home__perfil relative justify-self-center">
-          <div className="home__image w-56">
+          <div className="home__image w-[220px]">
             <Image
               className="home__img relative z-10"
               src="/images/home_perfil.jpg"
@@ -34,15 +36,8 @@ export default function HomeSection() {
               height={68}
               priority
             />
-            <Image
-              className="home__line absolute -right-8 -bottom-2 invert w-[50px] transition-filter duration-400"
-              src="/vectors/random_lines.svg"
-              alt="curved arrow"
-              width={53}
-              height={81}
-              priority
-            />
-            <div className="geometric-box top-10 -left-[.7rem] z-10" />
+            <Line right={-2} bottom={-0.5} priority />
+            <GeometricBox top={2.5} left={-0.7} />
             <HomeSocial />
           </div>
         </div>
